@@ -1,0 +1,36 @@
+/*Productos*/
+
+.container-product {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: #fbfcfc;
+}
+
+/*caja de aplicaciones*/
+.box-product {
+  border: 1px solid white;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+  .container-product {
+    flex-wrap: wrap;
+  }
+
+  .colum1 {
+    max-width: 300px;
+  }
+  .colum2,
+  .colum3 {
+    margin-top: 40px;
+  }
+}
+
+@media screen and(min-width:400px) {
+  .container-product {
+    display: block;
+  }
+}
